@@ -1,0 +1,19 @@
+<ons-page>
+    <div ng-controller="resultCtrl as result" ng-init="result.init_func()">
+	    <ons-toolbar>
+			<div class="center">
+				結果
+			</div>
+		</ons-toolbar>
+	
+        <p id="resultMessage"></p>
+
+	      <p>
+	        <ons-button modifier="large" ng-click="result.moveToTop()">
+	          戻る
+	        </ons-button>
+	      </p>
+
+    </div>
+</ons-page>
+

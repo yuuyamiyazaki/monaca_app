@@ -1,0 +1,22 @@
+  <ons-page>
+    <ons-toolbar>
+      <div class="center">Score</div>
+    </ons-toolbar>
+    <div ng-controller="ShowScoresController as show_score" ng-init="show_score.init_func()">
+    
+  <h1>スコア</h1>
+
+	      <p>
+	        <ons-button modifier="large" ng-click="show_score.moveToTop()">
+	          戻る
+	        </ons-button>
+	      </p>
+
+<!--最初は、ひとつのコントローラーだけで作成し、localStorageに保存、呼び出しができるサンプルをつくりました。その後、コントローラーを分割したものが下記のコードです。localStorage機能は省きました。-->
+<table>
+<tr ng-repeat='score in scores'>
+<td>{{score.message}}</td><td>{{score.point}}</td>
+</tr>
+</table>
+
+</div>

@@ -1,0 +1,23 @@
+<ons-page modifier="top-page">
+    <ons-toolbar>
+      <div class="center">Top</div>
+    </ons-toolbar>
+
+    <div class="title">
+        <h1>英単語学習アプリ</h1>
+        <p>monacaで作る英単語学習アプリ</p>
+    </div>
+    <div ng-controller="topCtrl as top">
+      <p>
+        <ons-button modifier="large" ng-click="top.gameStart()">
+          Game Start
+        </ons-button>
+      </p>
+
+      <p>
+        <ons-button modifier="large" ng-click="top.hogeStart()">
+          Score
+        </ons-button>
+      </p>
+    </div>
+  </ons-page>

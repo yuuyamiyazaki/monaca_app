@@ -1,0 +1,26 @@
+<ons-page>
+    <div ng-controller="gameCtrl as game" ng-init="game.init_func()">
+		<ons-toolbar>
+			<div class="center">
+				英単語学習アプリ
+			</div>
+			<div id="question_no" class="right">
+				1/10問目
+			</div>
+		</ons-toolbar>
+
+		<div>
+			<h1 id="title">question</h1>
+			<div id="question" >
+				
+			</div>
+			<div id="answerForm">
+				<input type="text" id="answer" placeholder="英単語を入力">
+				<button ng-click="game.judge()">OK</button>
+			</div>
+		</div>
+		<div id="gazou">
+			
+		</div>
+	</div>
+</ons-page>
